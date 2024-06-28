@@ -8,7 +8,7 @@ import click
 @click.command()
 @click.option('--output-dir', '-d', 'odir', help='output directory', default='.')
 @click.option('--output-fmt', '-e', 'ofmt', help='output file-format', default='.png')
-@click.argument('source', help='input video file')
+@click.argument('source')
 
 def cli(odir, ofmt, source):
     if not source:
